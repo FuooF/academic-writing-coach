@@ -16,7 +16,7 @@
 
 Academic Writing Coach 帮助智能体修改英文论文段落、解释表达选择，并为写作者提供针对性练习。它包含简洁的 [技能规范](SKILL.md)、**覆盖 12 个主题的 24 张原创指导卡片**及本地检索工具，支持用中文或英文解释。
 
-公开包自带可直接使用的指导卡片，也能连接单独保存的个人阅读资料。**本仓库及其发布包不包含 Manchester Academic Phrasebank 的全文句式库。**
+本包自带可直接使用的指导卡片。全文参考资料由使用者通过本地导入单独连接，可与内置卡片一起检索。
 
 ## 功能介绍
 
@@ -28,7 +28,7 @@ Academic Writing Coach 帮助智能体修改英文论文段落、解释表达选
 | **改段落 Revise** | 草稿及必要的研究背景 | 保留原有事实的修订稿，以及按需提供的修改解释 |
 | **做练习 Teach** | 想学会的一种写作方法 | 简短讲解、示例、练习题及对你作答的反馈 |
 
-12 个主题包括引言、文献综合、方法、结果、讨论、结论、审慎措辞、批判性评价、定义、比较、因果及过渡。每个主题有两张原创指导卡片。卡片用于解释写作判断，不是第三方句式库的全文转载。
+12 个主题包括引言、文献综合、方法、结果、讨论、结论、审慎措辞、批判性评价、定义、比较、因果及过渡。每个主题有两张原创指导卡片，解释写作判断及其适用情境。
 
 ### 修改原则
 
@@ -135,9 +135,9 @@ python scripts/lookup.py status
 
 检索支持英文和中文词语；将搜索返回的 ID 传给 `get`，即可读取完整卡片。`--dataset builtin`、`local` 或 `all` 分别选择内置卡片、私有导入资料或两者。
 
-## 可选：连接个人资料库
+## 可选：连接本地参考资料库
 
-导入器接受配套本地 Phrasebank 整理流程生成的 `content.json`，其中包含页面说明、来源网址及小节内容。该整理流程目前已有的私人归档包含 12 个页面、130 个小节。**这些是使用者自行提供的本地资料，不随公开包分发。** 导入器不会爬取网站，也不授予使用或转载所导入内容的权利。
+导入器接受配套 Phrasebank 整理流程生成的本地 `content.json`，其中包含页面说明、来源网址及小节内容。导入的参考资料保存在独立的数据目录中，可与内置指导卡片一起检索。
 
 请把资料目录放在本仓库和已安装技能目录之外。例如在 PowerShell 中运行：
 
@@ -165,13 +165,11 @@ python scripts/install.py --target codex --data-dir /path/to/my-private-writing-
 
 ## 来源与许可证
 
-[Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/) 由曼彻斯特大学的 John Morley 创建，是此前个人知识库整理项目的参考来源，也在此作为写作资源提供链接。网站声明 Academic Phrasebank 属于曼彻斯特大学的知识产权；大学的 [版权声明](https://www.manchester.ac.uk/copyright/) 要求转载其网站材料时取得许可。
+[Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/) 由**曼彻斯特大学的 John Morley** 创建，按论文章节和表达目的组织学术句式与写作指导，是本项目写作主题及本地参考资料整理流程的参考资源。各主题的原始链接整理在 [SOURCES.md](SOURCES.md) 中。
 
-公开 skill 包含独立撰写的规则、指导卡片、示例和工具，不分发已经保存的 Manchester 网页、完整句式列表、本地归档的 `content.json`，也不分发其翻译和注释。注明来源本身并不能授权转载这些材料。未来如要加入第三方内容，需要具有覆盖该用途的许可证或授权。
+本包包含独立编写的技能指令、指导卡片、示例、工具和文档，采用 [MIT License](LICENSE)。外部资源及用户导入资料适用其各自的版权和使用条款。许可范围详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-本项目的原创材料采用 [MIT License](LICENSE)。MIT 不适用于外部资源或用户私有导入的内容。来源与权利范围详见 [SOURCES.md](SOURCES.md) 和 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。本项目与曼彻斯特大学没有隶属关系，也未获其背书。
-
-双语 README 的组织方式参考了 [Kiterlin/anti-defensive-writing](https://github.com/Kiterlin/anti-defensive-writing)，未打包其文案、图片或实现。
+双语 README 的组织方式参考了 [Kiterlin/anti-defensive-writing](https://github.com/Kiterlin/anti-defensive-writing)。
 
 ## 仓库目录
 
@@ -202,4 +200,4 @@ python scripts/build_release.py --output ../release-artifacts
 
 分发时使用生成的公开压缩包。GitHub 上传步骤与检查事项见 [发布指南](docs/PUBLISHING.md)。生成压缩包不会自动创建 GitHub 仓库或发布内容。
 
-欢迎围绕具体写作判断或可复现的工具行为改进项目。贡献时提供原创示例和预期行为；未取得适当再分发许可的第三方句式库不应提交到仓库。
+欢迎围绕具体写作判断或可复现的工具行为改进项目。贡献时提供原创示例和预期行为，并为新增资源附上来源与许可信息。
