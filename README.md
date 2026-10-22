@@ -16,7 +16,7 @@
 
 Academic Writing Coach helps an agent revise English academic paragraphs, explain expression choices, and give writers focused practice. It combines a short [skill specification](SKILL.md), **24 original coaching cards across 12 topics**, and local search tools. Explanations can be in English or Chinese.
 
-The public package works immediately with its built-in cards. You can also connect a separate, private collection of your own saved reading material. The Manchester Academic Phrasebank full-text collection is **not included** in this repository or its releases.
+The package works immediately with its built-in coaching cards. Full-text reference collections can be supplied separately by the user through local import and searched alongside those cards.
 
 ## Overview
 
@@ -28,7 +28,7 @@ Good academic editing starts with what a paragraph needs to accomplish and what 
 | **Revise** | A paragraph and any necessary research context | A revision that preserves the supplied facts, with explanations when requested |
 | **Teach** | A writing move you want to learn | A short explanation, demonstration, practice task, and feedback on your attempt |
 
-The 12 topic families cover introductions, literature synthesis, methods, results, discussion, conclusions, cautious wording, critical evaluation, definitions, comparison, causality, and transitions. Each family has two original coaching cards. These cards explain writing decisions; they are not a reprint of a third-party phrase collection.
+The 12 topic families cover introductions, literature synthesis, methods, results, discussion, conclusions, cautious wording, critical evaluation, definitions, comparison, causality, and transitions. Each family has two original coaching cards explaining writing decisions and their use in context.
 
 ### Editing principles
 
@@ -135,9 +135,9 @@ python scripts/lookup.py status
 
 Search accepts English and Chinese terms. Use the IDs returned by search with `get` to read a complete card. `--dataset builtin`, `local`, or `all` selects the source of search results.
 
-## Optional private collection
+## Optional local reference collection
 
-The importer accepts the `content.json` format produced by the companion local Phrasebank archive workflow: page context, source URLs, and section content. That workflow's current archive contains 12 pages and 130 sections. **Those files are user-supplied private material and are not part of this public package.** The importer does not crawl a website or grant permission to use or redistribute imported material.
+The importer accepts a local `content.json` produced by the companion Phrasebank archive workflow, containing page context, source URLs, and section content. Imported reference material is stored in a separate data directory and can be retrieved alongside the built-in coaching cards.
 
 Keep the data directory outside this repository and outside the installed skill. For example, in PowerShell:
 
@@ -165,13 +165,11 @@ Alternatively, pass `--data-dir` to lookup commands or set the `ACADEMIC_WRITING
 
 ## Sources & license
 
-[Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/) was created by John Morley at the University of Manchester. It was a reference for the preceding personal knowledge-library project and is linked here as a resource for writers. The university identifies Academic Phrasebank as its intellectual property; its [copyright notice](https://www.manchester.ac.uk/copyright/) requires permission for reproduction of university website material.
+[Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/), created by **John Morley at the University of Manchester**, provides academic expressions and writing guidance organized by paper section and communicative purpose. It is a reference resource for this project's writing topics and local reference-library workflow. Links to individual topics are collected in [SOURCES.md](SOURCES.md).
 
-The public skill contains independently written instructions, coaching cards, examples, and tools. It does not redistribute the saved Manchester pages, their full phrase lists, the local archive's `content.json`, or its translations and annotations. Providing attribution alone would not authorize distributing those materials. Any later inclusion of third-party content requires a license or permission covering that use.
+This package contains independently written skill instructions, coaching cards, examples, tools, and documentation, released under the [MIT License](LICENSE). External resources and user-imported material remain subject to their respective copyright and terms of use. License scope is documented in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-Original project material is offered under the [MIT License](LICENSE). MIT does not apply to external resources or privately imported material. Read [SOURCES.md](SOURCES.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the provenance and scope of these notices. This project is independent of, and is not endorsed by, the University of Manchester.
-
-The bilingual README organization was inspired by [Kiterlin/anti-defensive-writing](https://github.com/Kiterlin/anti-defensive-writing). Its prose, artwork, and implementation are not bundled here.
+The bilingual README organization was inspired by [Kiterlin/anti-defensive-writing](https://github.com/Kiterlin/anti-defensive-writing).
 
 ## Repository layout
 
@@ -202,4 +200,4 @@ python scripts/build_release.py --output ../release-artifacts
 
 Use the generated public archive for distribution. See [the publishing guide](docs/PUBLISHING.md) for GitHub upload steps and checks. Building an archive does not publish it or create a GitHub repository.
 
-Contributions should improve a concrete writing decision or a reproducible tool behavior. Supply an original example and expected behavior; do not contribute copyrighted phrase collections without an appropriate redistribution license.
+Contributions should improve a concrete writing decision or a reproducible tool behavior. Supply original examples and expected behavior, with source and license information for any additional resources.
