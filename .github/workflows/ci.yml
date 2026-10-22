@@ -1,0 +1,47 @@
+name: Publish versioned packages
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Check version tag
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          expected = 'v' + Path('VERSION').read_text(encoding='utf-8').strip()
+          actual = os.environ['GITHUB_REF_NAME']
+          if actual != expected:
+              raise SystemExit(f'Tag {actual!r} does not match VERSION ({expected!r})')
+          PY
+      - name: Validate
+        run: python -m unittest discover -s tests -v
+      - name: Build allowlisted artifacts
+        run: python scripts/build_release.py --output "$RUNNER_TEMP/release-artifacts"
+      - name: Create release and upload public artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: >-
+          gh release create "$RELEASE_TAG"
+          "$RUNNER_TEMP"/release-artifacts/*
+          --verify-tag
+          --title "Academic Writing Coach $RELEASE_TAG"
+          --generate-notes
