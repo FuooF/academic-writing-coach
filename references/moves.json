@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "kind": "original",
+  "license": "MIT",
+  "examples_notice": "Independently authored illustrative examples. Any measurements, source labels, and research situations below are fictional teaching material, not empirical evidence or bibliographic references.",
+  "records": [
+    {
+      "id": "introduction.problem-scope",
+      "topic": "introduction",
+      "title_en": "Locate a concrete problem",
+      "title_zh": "把研究问题落到具体对象",
+      "purpose_zh": "引言需要让读者知道研究对象、具体困难和边界，先写可说明的问题，再决定是否需要重要性背景。",
+      "when_to_use": "Use when an introduction starts with broad praise but the actual research problem is already available.",
+      "steps": [
+        "Identify the supplied object, difficulty, and conditions.",
+        "Move the concrete problem forward; retain a significance claim only when supported."
+      ],
+      "example_before": "The sensor network matters greatly. We study a 30-second reporting delay when an alarm travels through three relays.",
+      "example_after": "This study examines the 30-second alarm-reporting delay in a sensor network with three relay stages.",
+      "explanation_zh": "把可核对的对象和延迟放在句子中心，删去没有增加信息的评价。",
+      "tags": [
+        "introduction",
+        "problem",
+        "scope",
+        "引言",
+        "研究对象",
+        "研究问题"
+      ]
+    },
+    {
+      "id": "introduction.gap-support",
+      "topic": "introduction",
+      "title_en": "Bound a research gap",
+      "title_zh": "限定研究空白的证据范围",
+      "purpose_zh": "研究空白应与实际审阅的文献范围相符；少量材料支持的判断不能自动扩展到整个领域。",
+      "when_to_use": "Use when the writer claims that no research exists but supplies only a bounded set of reviewed studies.",
+      "steps": [
+        "Locate the search or review scope supplied by the writer.",
+        "State what that evidence set leaves unresolved without asserting a universal absence."
+      ],
+      "example_before": "No study has considered moving sensors. In the eight studies reviewed here, all measurements used stationary sensors.",
+      "example_after": "The measurements reported in the eight studies reviewed here cover stationary sensors, leaving moving-sensor measurements outside this evidence set.",
+      "explanation_zh": "保留八项研究所报告的测量范围，不推断它们是否还做过模拟或理论分析。",
+      "tags": [
+        "gap",
+        "novelty",
+        "literature search",
+        "研究空白",
+        "无人研究",
+        "引言"
+      ]
+    },
+    {
+      "id": "literature.compare-evidence",
+      "topic": "literature",
+      "title_en": "Synthesize studies along a supported comparison",
+      "title_zh": "按有依据的比较维度综合文献",
+      "purpose_zh": "先找出研究之间真实的联系，再决定按主题、方法或结论组织；避免每篇文献各占一句却没有关系。",
+      "when_to_use": "Use when source summaries provide a supported comparison of questions, methods, or findings but are presented as disconnected items.",
+      "steps": [
+        "Choose a comparison dimension supplied by the sources and keep each source attached to its contribution.",
+        "If findings are available, state their supported relationship. If only methods are supplied, compare methods without inventing findings or a common research question."
+      ],
+      "example_before": "Study A used interviews and reported workload concerns. Study B used a survey and reported workload concerns.",
+      "example_after": "Interview evidence in Study A and survey results in Study B both identify workload concerns.",
+      "explanation_zh": "用共同发现连接两项研究，同时保留访谈和问卷这一区别；A、B仅为示例标签。",
+      "tags": [
+        "synthesis",
+        "literature review",
+        "sources",
+        "文献综合",
+        "文献综述",
+        "共同发现"
+      ]
+    },
+    {
+      "id": "literature.disagreement",
+      "topic": "literature",
+      "title_en": "Describe a bounded disagreement",
+      "title_zh": "具体描述研究分歧",
+      "purpose_zh": "说明哪两项结果不同、比较条件是什么；有条件差异时先保留差异，避免马上把分歧归因于某个因素。",
+      "when_to_use": "Use when cited studies reach different outcomes and their settings are known.",
+      "steps": [
+        "Name the differing findings and preserve their source markers.",
+        "State known setting differences separately from any explanation."
+      ],
+      "example_before": "Study A found a delay reduction indoors. Study B found no delay reduction outdoors. The literature is contradictory.",
+      "example_after": "Study A found a delay reduction indoors, whereas Study B found none outdoors. The findings differ across these settings.",
+      "explanation_zh": "把笼统评价变为有来源和条件的对照，并没有断言室内外差异导致了结果差异。",
+      "tags": [
+        "contrast studies",
+        "inconsistent",
+        "contradictory",
+        "分歧",
+        "文献矛盾",
+        "不一致"
+      ]
+    },
+    {
+      "id": "methods.reason-choice",
+      "topic": "methods",
+      "title_en": "Explain a methodological choice",
+      "title_zh": "解释方法与目标的关系",
+      "purpose_zh": "方法理由应说明该选择如何满足研究需要，并与实际操作保持一致。",
+      "when_to_use": "Use when a method is named without a clear connection to a supplied research requirement.",
+      "steps": [
+        "Identify the stated measurement or design requirement.",
+        "Connect the chosen method to that requirement without adding unreported advantages."
+      ],
+      "example_before": "We needed temperature records throughout the test. We used loggers that recorded temperature every minute.",
+      "example_after": "To record temperature throughout the test, we used loggers that stored one reading each minute.",
+      "explanation_zh": "把已有的需求与记录安排连接起来，不把记录频率替换为采样频率，也不额外声称仪器更精确。",
+      "tags": [
+        "method rationale",
+        "design",
+        "方法选择",
+        "研究方法",
+        "理由"
+      ]
+    },
+    {
+      "id": "methods.sequence",
+      "topic": "methods",
+      "title_en": "Make a procedure recoverable",
+      "title_zh": "按依赖顺序说明操作",
+      "purpose_zh": "读者需要知道每一步操作处理什么材料，以及下一步使用的是哪一步的输出。",
+      "when_to_use": "Use when a procedure contains the required details but their order or objects are unclear.",
+      "steps": [
+        "Arrange steps in their actual sequence.",
+        "Make the object of each operation explicit while preserving quantities and timing."
+      ],
+      "example_before": "The residue was weighed after drying. Before drying for 12 hours, we rinsed the residue twice.",
+      "example_after": "We rinsed the residue twice, dried it for 12 hours, and then weighed it.",
+      "explanation_zh": "仅调整操作顺序和句法，保留两次冲洗及十二小时干燥。",
+      "tags": [
+        "procedure",
+        "sequence",
+        "reproducibility",
+        "操作步骤",
+        "先后顺序",
+        "方法"
+      ]
+    },
+    {
+      "id": "results.describe-comparison",
+      "topic": "results",
+      "title_en": "Report the observed comparison",
+      "title_zh": "先报告可核对的比较",
+      "purpose_zh": "结果段先明确比较对象、指标和值，再决定是否需要解释；评价词不能取代数据。",
+      "when_to_use": "Use when an evaluative result sentence can be grounded in supplied measurements.",
+      "steps": [
+        "Keep the measure, groups, units, and values together.",
+        "Remove an evaluative label when the evidence for that label is not supplied."
+      ],
+      "example_before": "The new queue was much better. Its median wait was 12 ms, compared with 18 ms for the original queue.",
+      "example_after": "Median wait was 12 ms with the new queue and 18 ms with the original queue.",
+      "explanation_zh": "读者可以直接看到指标和比较，修改没有额外加入统计显著性。",
+      "tags": [
+        "results",
+        "numbers",
+        "baseline",
+        "结果描述",
+        "比较数据",
+        "性能"
+      ]
+    },
+    {
+      "id": "results.null-finding",
+      "topic": "results",
+      "title_en": "Report a non-significant finding precisely",
+      "title_zh": "区分未显著与等效",
+      "purpose_zh": "未检测到差异不等于已经证明两者相同；保留检验信息和能支持的结论。",
+      "when_to_use": "Use when a non-significant result is rewritten as equivalence.",
+      "steps": [
+        "Identify what the reported test actually evaluated.",
+        "Keep the numerical result and avoid asserting equality without an equivalence analysis."
+      ],
+      "example_before": "The two filters are equivalent because the difference test gave p = 0.28.",
+      "example_after": "The difference test gave p = 0.28 and did not establish a difference between the two filters.",
+      "explanation_zh": "删除了原句无法由该检验结果支持的等效判断。",
+      "tags": [
+        "null result",
+        "equivalence",
+        "significance",
+        "不显著",
+        "等效",
+        "结果"
+      ]
+    },
+    {
+      "id": "discussion.explanation-status",
+      "topic": "discussion",
+      "title_en": "Separate a finding from an explanation",
+      "title_zh": "区分观察与机制解释",
+      "purpose_zh": "让读者分清已经观察到的结果与尚待验证的解释，尤其是在讨论异常结果时。",
+      "when_to_use": "Use when a proposed mechanism is stated with greater certainty than the supplied evidence.",
+      "steps": [
+        "State the observed result without changing its magnitude or scope.",
+        "Label the supplied mechanism as a proposal when no mechanism test was performed."
+      ],
+      "example_before": "Accuracy dropped in low light. We did not test the mechanism, but sensor noise caused the drop.",
+      "example_after": "Accuracy dropped in low light. Sensor noise is a possible explanation, although the mechanism was not tested.",
+      "explanation_zh": "观察结果保持明确，机制解释恢复到与未检验状态一致的确定程度。",
+      "tags": [
+        "discussion",
+        "mechanism",
+        "interpretation",
+        "解释结果",
+        "讨论",
+        "机制"
+      ]
+    },
+    {
+      "id": "discussion.limit-consequence",
+      "topic": "discussion",
+      "title_en": "Connect a limitation to its consequence",
+      "title_zh": "说明局限具体影响什么",
+      "purpose_zh": "局限应指出对哪一种解释或推广构成约束，不必泛泛否定整个研究。",
+      "when_to_use": "Use when a limitation is listed without explaining which inference it affects.",
+      "steps": [
+        "Identify the concrete restriction in the supplied design.",
+        "Tie it to a specific unanswered question rather than a general apology."
+      ],
+      "example_before": "Only weekday journeys were sampled. This study has many limitations. Weekend journeys were not measured.",
+      "example_after": "The sample covers weekday journeys only, so it does not establish whether the pattern also occurs on weekends.",
+      "explanation_zh": "用采样范围说明推广边界，删去没有具体内容的自我否定。",
+      "tags": [
+        "limitation",
+        "generalizability",
+        "sample",
+        "局限",
+        "推广",
+        "适用范围"
+      ]
+    },
+    {
+      "id": "conclusion.answer-question",
+      "topic": "conclusion",
+      "title_en": "Close with the supported answer",
+      "title_zh": "用已支持的答案收束",
+      "purpose_zh": "结论应回应研究问题，提取最重要的结果，避免加入正文没有支持的新主张。",
+      "when_to_use": "Use when a conclusion restates the activity but does not foreground the supplied answer.",
+      "steps": [
+        "Identify the question and the finding that answers it.",
+        "State that answer at the tested scope before any implication."
+      ],
+      "example_before": "We investigated whether caching reduced repeated queries. In the tested workload it reduced database requests by 22%.",
+      "example_after": "Caching reduced database requests by 22% in the tested workload, addressing the problem of repeated queries.",
+      "explanation_zh": "以已报告的结果回答问题，并保留测试工作负载这一范围。",
+      "tags": [
+        "conclusion",
+        "answer",
+        "takeaway",
+        "结论",
+        "回答问题",
+        "总结发现"
+      ]
+    },
+    {
+      "id": "conclusion.next-test",
+      "topic": "conclusion",
+      "title_en": "Make a future direction testable",
+      "title_zh": "把后续工作写成可检验问题",
+      "purpose_zh": "后续方向最好来自当前尚未解决的具体问题，让读者知道下一步要比较或测量什么。",
+      "when_to_use": "Use when a generic call for more research can be tied to a supplied unresolved condition.",
+      "steps": [
+        "Name the condition not covered by the present work.",
+        "Formulate the next comparison without predicting its result."
+      ],
+      "example_before": "More research is needed. We tested one building and do not know whether the energy saving occurs in other buildings.",
+      "example_after": "A next step is to test whether the energy saving observed in this building also occurs in other buildings.",
+      "explanation_zh": "把空泛的呼吁改成由现有范围直接引出的验证问题。",
+      "tags": [
+        "future work",
+        "next study",
+        "recommendation",
+        "未来研究",
+        "后续工作",
+        "建议"
+      ]
+    },
+    {
+      "id": "caution.calibrate-verb",
+      "topic": "caution",
+      "title_en": "Match the verb to the design",
+      "title_zh": "让动词强度匹配研究设计",
+      "purpose_zh": "选择动词时先判断设计和证据能支持什么关系，不能为了增强语气改变结论。",
+      "when_to_use": "Use when observational evidence is described using a causal or conclusive verb.",
+      "steps": [
+        "Identify whether the evidence is observational, experimental, or speculative.",
+        "Choose a relationship verb consistent with the supplied design."
+      ],
+      "example_before": "In this observational sample, longer commutes caused lower satisfaction.",
+      "example_after": "In this observational sample, longer commutes were associated with lower satisfaction.",
+      "explanation_zh": "观测样本支持关系描述，未提供因果识别依据时不保留 caused。",
+      "tags": [
+        "hedging",
+        "certainty",
+        "evidence strength",
+        "审慎",
+        "证据强度",
+        "因果"
+      ]
+    },
+    {
+      "id": "caution.remove-stacked-hedges",
+      "topic": "caution",
+      "title_en": "Remove duplicated uncertainty",
+      "title_zh": "保留必要限定而减少叠加",
+      "purpose_zh": "谨慎表达需要准确而清楚；多个表示可能性的词堆叠，不会自动使结论更严谨。",
+      "when_to_use": "Use when several qualifiers express the same degree of uncertainty.",
+      "steps": [
+        "Identify the uncertainty that the supplied evidence requires.",
+        "Keep a clear qualifier and remove redundant repetitions."
+      ],
+      "example_before": "The missing records might possibly perhaps reflect a logging fault.",
+      "example_after": "The missing records might reflect a logging fault.",
+      "explanation_zh": "保留可能性，不把假设升级为事实，同时减少同义限定的堆叠。",
+      "tags": [
+        "hedges",
+        "concise",
+        "uncertainty",
+        "审慎表达",
+        "多余限定",
+        "简洁"
+      ]
+    },
+    {
+      "id": "critique.target-method",
+      "topic": "critique",
+      "title_en": "Critique a specific decision",
+      "title_zh": "针对具体方法提出评价",
+      "purpose_zh": "评价应落在可识别的设计、数据或推理问题，并说明其后果，避免用强烈形容词代替论证。",
+      "when_to_use": "Use when a broad negative judgment can be replaced by a supplied methodological concern.",
+      "steps": [
+        "Name the decision or omission being evaluated.",
+        "Explain the inference it prevents without speculating about the authors."
+      ],
+      "example_before": "The analysis is terrible. It pools two age groups, so we cannot tell whether the effect differs between them.",
+      "example_after": "Pooling the two age groups prevents the analysis from showing whether the effect differs between them.",
+      "explanation_zh": "保留批评依据及影响，去掉针对整体质量的笼统评价。",
+      "tags": [
+        "critical evaluation",
+        "method weakness",
+        "批判",
+        "评价",
+        "方法缺陷"
+      ]
+    },
+    {
+      "id": "critique.separate-evidence",
+      "topic": "critique",
+      "title_en": "Distinguish missing evidence from a false claim",
+      "title_zh": "区分缺少证据与结论错误",
+      "purpose_zh": "没有看到某项证据，只能支持对论证完整性的评价，通常不能直接证明命题为假。",
+      "when_to_use": "Use when absence of a reported test is treated as disproof.",
+      "steps": [
+        "Identify what evidence is absent from the supplied material.",
+        "State what remains unsupported without asserting the opposite conclusion."
+      ],
+      "example_before": "The model cannot generalize because the report contains no external validation.",
+      "example_after": "The report contains no external validation, so it does not establish how the model performs on new datasets.",
+      "explanation_zh": "评价报告尚未证明什么，不把验证缺失改写成模型一定无法泛化。",
+      "tags": [
+        "unsupported",
+        "absence",
+        "critical",
+        "缺乏证据",
+        "未经验证",
+        "批判"
+      ]
+    },
+    {
+      "id": "definitions.operational-term",
+      "topic": "definitions",
+      "title_en": "Define a measurement term",
+      "title_zh": "明确术语在本研究中的操作含义",
+      "purpose_zh": "当日常含义与实际测量可能不同，定义应给出本研究采用的判定规则。",
+      "when_to_use": "Use when a study-specific label has a supplied measurable criterion.",
+      "steps": [
+        "Identify the criterion already used in the study.",
+        "Link the term directly to that criterion and retain its threshold."
+      ],
+      "example_before": "We call a node unavailable if it sends no heartbeat for 10 seconds. Unavailability was counted.",
+      "example_after": "A node was classified as unavailable if it sent no heartbeat for 10 seconds.",
+      "explanation_zh": "把标签与判定条件放在一起，保留十秒阈值，不额外解释未提供的原因。",
+      "tags": [
+        "define",
+        "operational definition",
+        "threshold",
+        "定义",
+        "术语",
+        "操作化"
+      ]
+    },
+    {
+      "id": "definitions.scope-term",
+      "topic": "definitions",
+      "title_en": "Mark the local scope of a definition",
+      "title_zh": "区分本文用法与通用定义",
+      "purpose_zh": "约定性定义应说明它适用于当前分析，避免把局部分类写成普遍成立的定义。",
+      "when_to_use": "Use when a local labeling choice could be mistaken for a field-wide definition.",
+      "steps": [
+        "Identify whether the definition is a study convention or an attributed external standard.",
+        "Mark a local convention as local; keep external definitions attached to their actual sources."
+      ],
+      "example_before": "Small firms have fewer than 40 employees. For this dataset, we used 40 employees as the cutoff.",
+      "example_after": "In this dataset, firms with fewer than 40 employees were classified as small.",
+      "explanation_zh": "保留数据集的分类规则，而不暗示所有领域都采用相同标准。",
+      "tags": [
+        "definition scope",
+        "classification",
+        "术语范围",
+        "本文定义",
+        "分类"
+      ]
+    },
+    {
+      "id": "comparison.shared-basis",
+      "topic": "comparison",
+      "title_en": "Specify the comparison basis",
+      "title_zh": "统一比较所依据的指标",
+      "purpose_zh": "比较需要明确指标和条件，防止以不同量或不同基准得出笼统的优劣判断。",
+      "when_to_use": "Use when two alternatives differ on multiple supplied measures.",
+      "steps": [
+        "Separate the measures rather than compressing them into a single judgment.",
+        "Preserve each alternative and value so the tradeoff is visible."
+      ],
+      "example_before": "A is better than B. A uses 4 GB of memory and finishes in 8 minutes; B uses 2 GB of memory and finishes in 11 minutes.",
+      "example_after": "A finishes sooner than B (8 versus 11 minutes) but uses more memory (4 versus 2 GB).",
+      "explanation_zh": "把更好展开成速度与内存之间的具体取舍，数字和比较方向均保持。",
+      "tags": [
+        "compare",
+        "tradeoff",
+        "baseline",
+        "比较",
+        "对照",
+        "指标"
+      ]
+    },
+    {
+      "id": "comparison.control-scope",
+      "topic": "comparison",
+      "title_en": "Keep comparison conditions visible",
+      "title_zh": "保留比较的适用条件",
+      "purpose_zh": "结论依赖的测试条件应能被读者看到，尤其是在局部优势容易被扩展到所有情境时。",
+      "when_to_use": "Use when a result under one condition is presented as a universal ranking.",
+      "steps": [
+        "Find the stated test conditions.",
+        "Attach the comparison to those conditions without adding results for untested cases."
+      ],
+      "example_before": "B is always faster. Under the 50-client load, B completed the task in 7 seconds and A in 9 seconds.",
+      "example_after": "Under the 50-client load, B completed the task in 7 seconds, compared with 9 seconds for A.",
+      "explanation_zh": "删除 always 的无依据扩展，并保留负载条件。",
+      "tags": [
+        "comparison conditions",
+        "benchmark",
+        "比较条件",
+        "基准测试",
+        "适用范围"
+      ]
+    },
+    {
+      "id": "causality.chain-status",
+      "topic": "causality",
+      "title_en": "Separate a causal proposal from sequence",
+      "title_zh": "避免把先后顺序写成因果",
+      "purpose_zh": "一个变化出现在另一个变化之后，仅凭这个顺序无法确定原因。",
+      "when_to_use": "Use when a chronological observation is described as a demonstrated causal effect.",
+      "steps": [
+        "Separate the observed sequence from the proposed causal link.",
+        "Preserve a proposed mechanism only as a proposal if the design does not identify it."
+      ],
+      "example_before": "Complaints fell after the new timetable started, proving that the timetable caused the reduction.",
+      "example_after": "Complaints fell after the new timetable started; this sequence alone does not establish the cause of the reduction.",
+      "explanation_zh": "保留时间关系和变化，撤回仅凭先后顺序得出的因果结论。",
+      "tags": [
+        "causal inference",
+        "sequence",
+        "因果解释",
+        "先后",
+        "原因"
+      ]
+    },
+    {
+      "id": "causality.conditioned-effect",
+      "topic": "causality",
+      "title_en": "Keep causal conditions attached",
+      "title_zh": "保留因果陈述的实验条件",
+      "purpose_zh": "即使研究支持某种影响，也应保留该影响被观察到的对象、干预和条件。",
+      "when_to_use": "Use when a bounded experimental effect is generalized beyond the supplied setting.",
+      "steps": [
+        "Identify the intervention and the tested outcome.",
+        "Keep the effect attached to the experimental setting and avoid adding a mechanism."
+      ],
+      "example_before": "The treatment improves every coating. In our randomized test of coating C, treated samples resisted scratching longer than untreated samples.",
+      "example_after": "In the randomized test of coating C, treatment increased scratch resistance relative to untreated samples.",
+      "explanation_zh": "保留随机测试中的影响，不扩展到未测试的所有涂层，也不添加作用机制。",
+      "tags": [
+        "causal claim",
+        "experiment",
+        "effect",
+        "实验",
+        "因果条件",
+        "影响"
+      ]
+    },
+    {
+      "id": "transitions.real-relation",
+      "topic": "transitions",
+      "title_en": "Choose a transition that reflects the relation",
+      "title_zh": "按真实关系选择连接方式",
+      "purpose_zh": "连接词应反映句子之间已有的逻辑，不能替代缺失的推理。",
+      "when_to_use": "Use when a connector implies a causal or contrastive relationship that the sentences do not support.",
+      "steps": [
+        "Identify whether the next sentence adds, contrasts, explains, or follows from the previous one.",
+        "Use a connector only when that relation is warranted."
+      ],
+      "example_before": "The device weighs 200 g. Therefore, it stores 8 GB of data.",
+      "example_after": "The device weighs 200 g and stores 8 GB of data.",
+      "explanation_zh": "两项属性是并列补充，原来的 therefore 无依据地暗示因果。",
+      "tags": [
+        "transition",
+        "connector",
+        "logic",
+        "衔接",
+        "连接词",
+        "逻辑"
+      ]
+    },
+    {
+      "id": "transitions.paragraph-handoff",
+      "topic": "transitions",
+      "title_en": "Hand a question to the next paragraph",
+      "title_zh": "让段落过渡服务于下一步问题",
+      "purpose_zh": "跨段落过渡可以指出已解决的问题和接下来需要考察的条件，让读者理解顺序。",
+      "when_to_use": "Use when consecutive paragraphs cover a baseline and a changed condition but the progression is unclear.",
+      "steps": [
+        "Identify the point established in the preceding paragraph.",
+        "Name the next question or condition using only the supplied study plan."
+      ],
+      "example_before": "The first experiment measured single-client latency. The next experiment measured latency with 50 clients. We now change the subject.",
+      "example_after": "The first experiment measured single-client latency; the next examined latency with 50 clients.",
+      "explanation_zh": "过渡明确连接两次实验的条件变化，删去与内容无关的换话题提示。",
+      "tags": [
+        "paragraph transition",
+        "flow",
+        "段落衔接",
+        "过渡",
+        "章节连接"
+      ]
+    }
+  ]
+}

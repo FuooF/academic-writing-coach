@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing Coach"
+  short_description: "Revise academic prose and learn the writing moves"
+  default_prompt: "Use $academic-writing-coach to improve this academic paragraph and explain the key revisions."

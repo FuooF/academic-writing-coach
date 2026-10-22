@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.local-data-config.json
+*.private.json
+local-data/
+private-data/
+original-html/
+dist/
+*.zip
+*.skill
+.venv/
+venv/
